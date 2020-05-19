@@ -1,0 +1,110 @@
+page {
+  background-color: #181818;
+}
+
+swiper {
+  width: 100%;
+  height: 500rpx;
+  transform: translate(30px, 30px);
+}
+
+swiper-item {
+  position: relative;
+}
+
+swiper image {
+  width: 100%;
+  height: 500rpx;
+  border-radius: 20px;
+}
+
+.swiper-wrapper {
+  position: absolute;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(54, 54, 54, 0.5);
+  top: 0;
+  left: 0;
+}
+
+.swiper-wrapper-inner {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  color: #dfd7c3;
+}
+
+.swiper-wrapper-inner .title {
+  font-size: x-large;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.swiper-wrapper-inner .author {
+  font-size: small;
+  padding-left: 10px;
+  color: #ff4d27;
+  font-weight: 700;
+  padding-bottom: 20rpx;
+}
+
+.poetry-grid {
+  margin-top: 80px;
+}
+
+.des {
+  color: #dfd7c3;
+  font-size: medium;
+  padding-left: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.poetry-item {
+  padding: 20px 30px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.poetry-item .image {
+  border-radius: 20px;
+}
+
+.poetry-item .image image {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.poetry-item .date {
+  color: #ff4d27;
+  font-size: x-small;
+  font-weight: 700;
+  position: absolute;
+  top: 40px;
+  right: 50px;
+}
+.poetry-item .author {
+  color: #ff4d27;
+  font-size: x-small;
+  font-weight: 700;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+}
+
+.poetry-item .title {
+  position: absolute;
+  font-weight: 700;
+  font-size: x-large;
+  color: #dfd7c3;
+  left: 30px;
+  bottom: 24px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(54, 54, 54, 0.8);
+  width: calc(100% - 80px);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}

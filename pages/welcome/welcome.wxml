@@ -1,0 +1,4 @@
+<view class="wrapper">
+  <text class="logo">THE RHYTHM</text>
+  <button id="login" bindtap="login">登入</button>
+</view>

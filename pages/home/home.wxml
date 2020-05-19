@@ -1,0 +1,51 @@
+<view>
+  <swiper catchtap="onSwiperTap" vertical='{{false}}' indicator-dots='{{true}}' autoplay='{{true}}' interval="5000">
+    <swiper-item>
+      <image src="../../img/1.jpg" data-postId="1"></image>
+      <view class="swiper-wrapper">
+        <view class="swiper-wrapper-inner">
+          <view class="author">W. B. Yeats</view>
+          <view class="title">The Young Man's Song</view>
+        </view>
+      </view>
+    </swiper-item> 
+    <swiper-item>
+      <image src="../../img/2.jpg" data-postId="2"></image>
+       <view class="swiper-wrapper">
+        <view class="swiper-wrapper-inner">
+          <view class="author">W. B. Yeats</view>
+          <view class="title">The Young Man's Song</view>
+        </view>
+      </view>
+    </swiper-item> 
+    <swiper-item>
+      <image src="../../img/3.jpg" data-postId="3"></image>
+       <view class="swiper-wrapper">
+        <view class="swiper-wrapper-inner">
+          <view class="author">W. B. Yeats</view>
+          <view class="title">The Young Man's Song</view>
+        </view>
+      </view>
+    </swiper-item> 
+  </swiper>
+</view>
+
+<view class="poetry-grid">
+  <view class="des"><text>Featutred Poetry</text></view>
+  <view class="poetry-item">
+    <view class="date">1609</view>
+    <view class="author">William Shakespeare</view>
+    <view class="title">SONNET 18</view>
+    <view class="image">
+      <image src="../../img/6.jpg"></image>
+    </view>
+  </view>
+  <view class="poetry-item">
+    <view class="date">1606</view>
+    <view class="author">William Shakespeare</view>
+    <view class="title">SONNET 130</view>
+    <view class="image">
+      <image src="../../img/7.jpg"></image>
+    </view>
+  </view>
+</view>

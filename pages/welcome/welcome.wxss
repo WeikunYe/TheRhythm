@@ -1,0 +1,24 @@
+.wrapper{
+  height: 100vh;
+  position: relative;
+  background-color: #181818;
+  color: #dfd7c3;
+}
+.logo{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: x-large;
+  letter-spacing: 4px;
+}
+#login{
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #181818;
+  border: 1px solid #dfd7c3;
+  color: #dfd7c3;
+  width: 140px;
+}
