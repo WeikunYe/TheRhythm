@@ -9,10 +9,19 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false,
 		"coverView": true,
+		"autoAudits": false,
 		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"nodeModules": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.0",
@@ -60,6 +69,12 @@
 					"name": "Poetry",
 					"pathName": "pages/poetry/poetry",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/poetry/poetry",
+					"pathName": "pages/poetry/poetry",
 					"scene": null
 				}
 			]

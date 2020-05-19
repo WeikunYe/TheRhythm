@@ -33,7 +33,7 @@
   font-weight: 700;
   font-style: italic;
 }
-.content .author text:first-child{
+.content .author text:not(:last-child){
   margin-right: 25px;
 }
 .poetry-body{
@@ -46,4 +46,13 @@
 }
 .poetry-body view{
   margin-bottom: 10px;
+}
+.i-switch-checked {
+  background-color: #ff4d27;
+  border-color: #ff4d27;
+}
+.switcher{
+  position: absolute;
+  right: 20px;
+  top: 40px;
 }

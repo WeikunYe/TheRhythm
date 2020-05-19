@@ -8,22 +8,24 @@
     <view class="author">
       <text>{{poetry.author}}</text>
       <text>{{poetry.year}}</text>
+      <text wx:if="{{!language}}">{{poetry.translater}}译</text>
     </view>
+    <i-switch class="switcher" value="{{language}}" size="large" bind:change="changeLanguage" slot="footer">
+      <view slot="open">EN</view>
+      <view slot="close">中文</view>
+    </i-switch>
+    <view class="play-btn" bindtap="playAudio">
+      <i-icon type="play_fill" size="28" color="#ff4d27"></i-icon>
+      <i-icon type="suspend" size="28" color="#ff4d27"></i-icon>
+    </view>
+    <audio poster="../../img/1.jpg" name="ha" author="ha" src="../../img/1.mp3" id="myAudio" controls loop bindplay="funplay" bindpause="funpause" bindtimeupdate="funtimeupdate" bindended="funended" binderror="funerror"></audio>
     <view class="poetry-body">
-      <view>Shall I compare thee to a summer's day?</view>
-      <view> Thou art more lovely and more temperate:</view>
-      <view> Rough winds do shake the darling buds of May,</view>
-      <view> And summer's lease hath all too short a date;</view>
-      <view> Sometime too hot the eye of heaven shines,</view>
-      <view> And often is his gold complexion dimm'd;</view>
-      <view> And every fair from fair sometime declines,</view>
-      <view> By chance or nature’s changing course untrimm'd;</view>
-      <view> But thy eternal summer shall not fade,</view>
-      <view> Nor lose possession of that fair thou ow’st;</view>
-      <view> Nor shall death brag thou wander’st in his shade,</view>
-      <view> When in eternal lines to time thou grow’st:</view>
-      <view> So long as men can breathe or eyes can see,</view>
-      <view> So long lives this, and this gives life to thee.</view>
+      <view wx:if="{{language}}" wx:for="{{poetry.en}}" wx:key="*this" wx:for-item="line">
+        {{line}}
+      </view>
+      <view wx:if="{{!language}}" wx:for="{{poetry.cn}}" wx:key="*this" wx:for-item="line">
+        {{line}}
+      </view>
     </view>
   </view>
 

@@ -1,5 +1,8 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+      "i-switch": "../../dist/switch/index",
+      "i-icon": "../../dist/icon/index"
+  },
     "navigationBarBackgroundColor": "#181818",
     "navigationBarTextStyle": "white"
 }
