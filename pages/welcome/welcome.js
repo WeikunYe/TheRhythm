@@ -7,7 +7,7 @@ Page({
 
   },
   login: function(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '../home/home',
     })
   }

@@ -1,4 +1,4 @@
-<view>
+<view class="wrapper">
   <swiper catchtap="onSwiperTap" vertical='{{false}}' indicator-dots='{{true}}' autoplay='{{true}}' interval="5000">
     <swiper-item>
       <image src="../../img/1.jpg" data-postId="1"></image>
@@ -37,7 +37,7 @@
     <view class="author">William Shakespeare</view>
     <view class="title">SONNET 18</view>
     <view class="image">
-      <image src="../../img/6.jpg"></image>
+      <image src="../../img/6.jpg" mode="scaleToFill"></image>
     </view>
   </view>
   <view class="poetry-item">
@@ -45,7 +45,12 @@
     <view class="author">William Shakespeare</view>
     <view class="title">SONNET 130</view>
     <view class="image">
-      <image src="../../img/7.jpg"></image>
+      <image src="../../img/7.jpg" mode="scaleToFill"></image>
     </view>
   </view>
 </view>
+<i-tab-bar current="{{ current }}" color="#ff4d27" bindchange="handleChange" class="tab-sticky">
+    <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="Home"></i-tab-bar-item>
+    <i-tab-bar-item key="category" icon="document" current-icon="document_fill" title="Category"></i-tab-bar-item>
+    <i-tab-bar-item key="account" icon="mine" current-icon="mine_fill" title="Account"></i-tab-bar-item>
+</i-tab-bar>

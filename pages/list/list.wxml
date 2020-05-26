@@ -1,0 +1,27 @@
+<view class="poetry-grid">
+  <view class="des"><text>William Shakespeare</text></view>
+  <view class="poetry-item">
+    <view class="date">1609</view>
+    <view class="author">William Shakespeare</view>
+    <view class="title">SONNET 18</view>
+    <view class="image">
+      <image src="../../img/6.jpg" mode="scaleToFill"></image>
+    </view>
+  </view>
+  <view class="poetry-item">
+    <view class="date">1606</view>
+    <view class="author">William Shakespeare</view>
+    <view class="title">SONNET 130</view>
+    <view class="image">
+      <image src="../../img/7.jpg" mode="scaleToFill"></image>
+    </view>
+  </view>
+  <view class="poetry-item">
+    <view class="date">1606</view>
+    <view class="author">William Shakespeare</view>
+    <view class="title">SONNET 130</view>
+    <view class="image">
+      <image src="../../img/7.jpg" mode="scaleToFill"></image>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,68 @@
+<view>
+  <view class="cate-header">The poetries</view>
+  <view class="search-bar">
+    <input type="text"></input>
+    <i-icon class="search" type="search" size="28" color="#dfd7c3"></i-icon>
+  </view>
+  <view class="p-grid">
+    <view class="p-grid-item">
+      <image src="../../img/william_shakespare.jpg" mode="widthFix"></image>
+      <view class="p-grid-content">
+        <view class="inner">
+          <view class="author">W. Shakespeara</view>
+          <view class="count">55</view>
+        </view>
+      </view>
+    </view>
+    <view class="p-grid-item">
+      <image src="../../img/william_shakespare.jpg" mode="widthFix"></image>
+      <view class="p-grid-content">
+        <view class="inner">
+          <view class="author">W. Shakespeara</view>
+          <view class="count">55</view>
+        </view>
+      </view>
+    </view>
+    <view class="p-grid-item">
+      <image src="../../img/william_shakespare.jpg" mode="widthFix"></image>
+      <view class="p-grid-content">
+        <view class="inner">
+          <view class="author">W. Shakespeara</view>
+          <view class="count">55</view>
+        </view>
+      </view>
+    </view>
+    <view class="p-grid-item">
+      <image src="../../img/william_shakespare.jpg" mode="widthFix"></image>
+      <view class="p-grid-content">
+        <view class="inner">
+          <view class="author">W. Shakespeara</view>
+          <view class="count">55</view>
+        </view>
+      </view>
+    </view>
+    <view class="p-grid-item">
+      <image src="../../img/william_shakespare.jpg" mode="widthFix"></image>
+      <view class="p-grid-content">
+        <view class="inner">
+          <view class="author">W. Shakespeara</view>
+          <view class="count">55</view>
+        </view>
+      </view>
+    </view>
+    <view class="p-grid-item">
+      <image src="../../img/william_shakespare.jpg" mode="widthFix"></image>
+      <view class="p-grid-content">
+        <view class="inner">
+          <view class="author">W. Shakespeara</view>
+          <view class="count">55</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<i-tab-bar current="{{ current }}" color="#ff4d27" bindchange="handleChange" class="tab-sticky">
+    <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="Home"></i-tab-bar-item>
+    <i-tab-bar-item key="category" icon="document" current-icon="document_fill" title="Category"></i-tab-bar-item>
+    <i-tab-bar-item key="account" icon="mine" current-icon="mine_fill" title="Account"></i-tab-bar-item>
+</i-tab-bar>

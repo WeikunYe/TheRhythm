@@ -1,18 +1,22 @@
+// pages/cate/cate.js
 Page({
 
+  /**
+   * Page initial data
+   */
   data: {
-    current: 'homepage'
+    current: 'category'
   },
 
-  onLoad: function(options) {
+  /**
+   * Lifecycle function--Called when page load
+   */
+  onLoad: function (options) {
 
   },
-  onShareAppMessage: function() {
-
-  },
-  handleChange: function(e) {
+  handleChange: function (e) {
     let item = e.detail.key;
-    if(item != this.data.current){
+    if (item != this.data.current) {
       switch (item) {
         case "homepage":
           wx.redirectTo({

@@ -73,8 +73,22 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/poetry/poetry",
-					"pathName": "pages/poetry/poetry",
+					"name": "Cate",
+					"pathName": "pages/cate/cate",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "List",
+					"pathName": "pages/list/list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/account/account",
+					"pathName": "pages/account/account",
 					"scene": null
 				}
 			]

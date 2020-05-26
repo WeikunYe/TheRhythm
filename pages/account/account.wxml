@@ -1,0 +1,5 @@
+<i-tab-bar current="{{ current }}" color="#ff4d27" bindchange="handleChange" class="tab-sticky">
+    <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="Home"></i-tab-bar-item>
+    <i-tab-bar-item key="category" icon="document" current-icon="document_fill" title="Category"></i-tab-bar-item>
+    <i-tab-bar-item key="account" icon="mine" current-icon="mine_fill" title="Account"></i-tab-bar-item>
+</i-tab-bar>

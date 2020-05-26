@@ -14,11 +14,6 @@
       <view slot="open">EN</view>
       <view slot="close">中文</view>
     </i-switch>
-    <view class="play-btn" bindtap="playAudio">
-      <i-icon type="play_fill" size="28" color="#ff4d27"></i-icon>
-      <i-icon type="suspend" size="28" color="#ff4d27"></i-icon>
-    </view>
-    <audio poster="../../img/1.jpg" name="ha" author="ha" src="../../img/1.mp3" id="myAudio" controls loop bindplay="funplay" bindpause="funpause" bindtimeupdate="funtimeupdate" bindended="funended" binderror="funerror"></audio>
     <view class="poetry-body">
       <view wx:if="{{language}}" wx:for="{{poetry.en}}" wx:key="*this" wx:for-item="line">
         {{line}}

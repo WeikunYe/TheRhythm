@@ -45,62 +45,30 @@ Page({
     language: 1,
     isPlay: false
   },
-
-  /**
-   * Lifecycle function--Called when page load
-   */
   onLoad: function(options) {
     var that = this;
     wx.setNavigationBarTitle({
       title: this.data.poetry.title
     })
   },
-
-  /**
-   * Lifecycle function--Called when page is initially rendered
-   */
   onReady: function() {
-
+    this.audioCtx = wx.createAudioContext('myAudio');
   },
-
-  /**
-   * Lifecycle function--Called when page show
-   */
   onShow: function() {
 
   },
-
-  /**
-   * Lifecycle function--Called when page hide
-   */
   onHide: function() {
 
   },
-
-  /**
-   * Lifecycle function--Called when page unload
-   */
   onUnload: function() {
 
   },
-
-  /**
-   * Page event handler function--Called when user drop down
-   */
   onPullDownRefresh: function() {
 
   },
-
-  /**
-   * Called when page reach bottom
-   */
   onReachBottom: function() {
 
   },
-
-  /**
-   * Called when user click on the top right corner to share
-   */
   onShareAppMessage: function() {
 
   },
@@ -109,25 +77,5 @@ Page({
     this.setData({
       language: !that.data.language
     })
-  },
-  playAudio: function(ev) {
-    var that = this;
-    var isPlay = this.data.isPlay;
-    if (isPlay) {
-      wx.pauseBackgroundAudio();
-      this.setData({
-        isPlay: false
-      })
-    } else {
-      wx.playBackgroundAudio({
-        dataUrl: "http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E061FF02C31F716658E5C81F5594D561F2E88B854E81CAAB7806D5E4F103E55D33C16F3FAC506D1AB172DE8600B37E43FAD&fromtag=46",
-        title: that.data.poetry.title,
-        coverImgUrl: 'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000'
-      })
-      this.setData({
-        isPlay: true
-      })
-    }
-
   }
 })
